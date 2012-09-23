@@ -1,7 +1,7 @@
 php-import
 ==========
 
-This package let you load php files into your scripts with code completion,
+This package let you load (_require_) php files into your scripts with code completion,
 just like the java import!
 
 
@@ -26,10 +26,8 @@ Fill in all the required properties, expecially your libraries root directory.
 
 ```shell
 $ # From the shell: create your config file and run the make-import script
-$ 
 $ cp config.sample.php config.php
 $ # edit `config.php` using your favorite text editor and fill it with all the required options
-$ 
 $ php make-import.php
 >>> import-file `/var/www/libs/import.inc.php` built successfully
 ```
@@ -47,6 +45,12 @@ import ()->HtmlTemplate->Smarty->load ($recursive = true);
 
 // -- require a directory NOT-recursively in the script
 import ()->Whatever->load ($recursive = false);
+
+// -- ask the relative path
+import ()->Whatever->path ();
+
+// -- ask the absolute path
+import ()->Whatever->fullpath ();
 ```
 
 
