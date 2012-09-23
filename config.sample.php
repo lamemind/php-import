@@ -1,6 +1,6 @@
 <?php
 /**
- * php-import (c) by Enrico Ballardini (lamemind@gmail.com)
+ * php-import (c) by Enrico Ballardini (aka LameMind) (lamemind@gmail.com)
  * 
  * php-import is licensed under a
  * Creative Commons Attribution-NonCommercial 3.0 Unported License.
