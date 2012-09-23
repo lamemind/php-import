@@ -34,6 +34,7 @@ $ php make-import.php
 >>> import-file `/var/www/libs/import.inc.php` built successfully
 ```
 ```php
+<?php
 // Inside your php scripts
 
 // First, load the built import-file
