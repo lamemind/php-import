@@ -6,6 +6,9 @@ just like the java import!
 
 
 ```php
+// Require a single file in the script
 import ()->Logging->Logger;
+
+// Require a directory recursively in the script
 import ()->HtmlTemplate->Smarty->load ($recursive = true);
 ```
