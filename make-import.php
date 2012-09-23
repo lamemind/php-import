@@ -14,4 +14,4 @@ $import = new ImportGenerator ();
 if (!$import->loadConfigFile () || !$import->build ())
 	die ($import->getError () . "\n\n");
 
-echo "import-file `" . $import->getDestFilepath () . "` built successfully\n\n";
+echo ">>> import-file `" . $import->getDestFilepath () . "` built successfully\n\n";
