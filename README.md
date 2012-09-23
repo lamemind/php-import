@@ -1,4 +1,8 @@
 php-import
 ==========
 
-This package let you import libraries in php script, in the java style
+This package let you load php files into your scripts with code completition,
+just like the java import!
+
+
+
