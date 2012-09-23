@@ -16,7 +16,7 @@
 class ImportGenerator
 {
 	const FUNCTION_DEFAULTNAME = "import";
-	const DESTFILE_DEFAULTNAME = "import_cache.inc.php";
+	const DESTFILE_DEFAULTNAME = "import.inc.php";
 	
 	const IMPORTCLASS_DEFAULT_PREFIX = "_Ipt";
 	const IMPORTCLASS_MAIN_POSTFIX = "_Root";
