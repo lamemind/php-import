@@ -21,7 +21,7 @@ $config = array (
 		// The destination file, that one you require to declare the main function
 			// Default value as of ImportGenerator::DESTFILE_DEFAULTNAME
 			// ### not required, can be empty
-			"DestFileName" => "import_cache.inc.php",
+			"DestFileName" => "import.inc.php",
 			
 			// The file path where the target file is created defaults to your libraries root dir.
 			// You can define a different destination path here
