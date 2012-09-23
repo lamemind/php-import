@@ -219,6 +219,13 @@ class ImportGenerator
 		$this->target_destFilepath = $destFilepath;
 		return true;
 	}
+	/**
+	 * @return string
+	 */
+	public function getDestFilepath ()
+	{
+		return $this->target_destFilepath . $this->target_destFilename;
+	}
 	
 	
 	/**
