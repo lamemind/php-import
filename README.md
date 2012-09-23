@@ -1,7 +1,7 @@
 php-import
 ==========
 
-This package let you load (_require_) php files into your scripts with code completion,
+This package let you load (_require_) php files into your scripts with **code completion**,
 just like the java import!
 
 
