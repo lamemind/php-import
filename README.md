@@ -25,12 +25,13 @@ Fill in all the required properties, expecially your libraries root directory.
 * Then you're done.
 
 ```shell
-# From the shell: create your config file and run the make-import script
-
-cp config.sample.php config.php
-# edit `config.php` using your favorite text editor and fill it with all the required options
-
-php make-import.php
+$ # From the shell: create your config file and run the make-import script
+$ 
+$ cp config.sample.php config.php
+$ # edit `config.php` using your favorite text editor and fill it with all the required options
+$ 
+$ php make-import.php
+>>> import-file `/var/www/libs/import.inc.php` built successfully
 ```
 ```php
 // Inside your php scripts
