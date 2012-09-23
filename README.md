@@ -46,10 +46,10 @@ import ()->HtmlTemplate->Smarty->load ($recursive = true);
 // -- require a directory NOT-recursively in the script
 import ()->Whatever->load ($recursive = false);
 
-// -- ask the relative path
+// -- get a directory relative path
 import ()->Whatever->path ();
 
-// -- ask the absolute path
+// -- get a directory absolute path
 import ()->Whatever->fullpath ();
 ```
 
