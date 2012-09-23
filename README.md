@@ -35,10 +35,8 @@ $ php make-import.php
 ```
 ```php
 <?php
-// Inside your php scripts
-
-// First, load the built import-file
-require "import-built-file.php";
+// Then, load the built import-file
+require "libs/import.inc.php";
 
 // Then, you can
 // -- require a single file in the script
