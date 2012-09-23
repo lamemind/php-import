@@ -1,4 +1,14 @@
 <?php
+/**
+ * php-import (c) by Enrico Ballardini (lamemind@gmail.com)
+ * 
+ * php-import is licensed under a
+ * Creative Commons Attribution-NonCommercial 3.0 Unported License.
+ * 
+ * You should have received a copy of the license along with this
+ * work.  If not, see <http://creativecommons.org/licenses/by-nc/3.0/>.
+ */
+
 // This is a sample config file, used to help you create your own config file.
 // Your config file must be named `config.php` and placed beside the `make-import.php` file
 $config = array (
