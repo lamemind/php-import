@@ -14,3 +14,4 @@ $import = new ImportGenerator ();
 if (!$import->loadConfigFile () || !$import->build ())
 	die ($import->getError () . "\n\n");
 
+echo "Import cache file generated successfully\n\n";
