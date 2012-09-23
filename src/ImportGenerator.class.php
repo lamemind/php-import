@@ -277,6 +277,11 @@ class ImportGenerator
 
 	
 	
+	/**
+	 * @param string $prefix Prefix to be applied to file elements
+	 * @param string $postfix Postfix to be applied to file elements
+	 * @return bool
+	 */
 	public function NameDup_setupFileObject ($prefix, $postFix)
 	{
 		if (strlen ($prefix) > 0 && preg_match (self::FUNCTIONNAME_PATTERN, $prefix) == 0)
@@ -288,6 +293,11 @@ class ImportGenerator
 		$this->namedup_filePostfix = $postFix;
 		return true;
 	}
+	/**
+	 * @param string $prefix Prefix to be applied to directory elements
+	 * @param string $postfix Postfix to be applied to directory elements
+	 * @return bool
+	 */
 	public function NameDup_setupDirObject ($prefix = self::DIROBJ_DEFAULT_PREFIX, $postFix = self::DIROBJ_DEFAULT_POSTFIX)
 	{
 		if (strlen ($prefix) > 0 && preg_match (self::FUNCTIONNAME_PATTERN, $prefix) == 0)
@@ -417,10 +427,9 @@ class ImportGenerator
 	
 	private function initBuffer ()
 	{
-		$this->_buffer = ""; // "<?php\n";
+		$this->_buffer = "";
 		
 		$templateFile = file_get_contents (dirname (__FILE__) . "/TemplateFile.php");
-		// $absClassesContent = substr ($absClassesContent, strpos ($absClassesContent, "\n") + 1);
 		$templateFile = str_replace ("{{ROOT_DIR}}", $this->_rootDir, $templateFile);
 		$templateFile = str_replace ("___IMPORT_FUNC_NAME___", $this->target_functionName, $templateFile);
 		$templateFile = str_replace ("___IMPORT_ROOT_CLASSNAME___", $this->_rootClass, $templateFile);
@@ -577,11 +586,19 @@ class ImportGenerator
 	
 	
 	
+	/**
+	 * @param string $errmsg
+	 * @return false
+	 */
 	private function err ($errmsg)
 	{
 		$this->_error = $errmsg;
 		return false;
 	}
+	/**
+	 * Returns the last error generated during the process
+	 * @return string the last error generated
+	 */
 	public function getError ()
 	{
 		return $this->_error;
