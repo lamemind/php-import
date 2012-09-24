@@ -13,18 +13,18 @@
 // Your config file must be named `config.php` and placed beside the `make-import.php` file
 $config = array (
 	"TargetFile" => array (
-		// The main function name, that one you call to access to your libraries
+		// The main function name, the one you call to access your libraries
 		// Default value at ImportGenerator::FUNCTION_DEFAULTNAME
 		// ### not required, can be empty
 		"MainFunction" => "import",
 		
-		// The destination file, that one you require to declare the main function
+		// The destination file, the one you require to declare the main function
 			// Default value as of ImportGenerator::DESTFILE_DEFAULTNAME
 			// ### not required, can be empty
 			"DestFileName" => "import.inc.php",
 			
-			// The file path where the target file is created defaults to your libraries root dir.
-			// You can define a different destination path here
+			// The file path where the destination file is created defaults to your libraries root dir.
+			// You can define a different destination directory here
 			// ### not required, can be empty
 			"DestFilePath" => "",
 	),
@@ -37,26 +37,27 @@ $config = array (
 	
 	
 	"Mapping" => array (
-		// Reg-ex patterns applyied to files' full paths. If a pattern matches, the file/directory is excluded from the process.
+		// Reg-ex patterns applyied to files (full path and name).
+		// If a pattern matches, the file/directory is excluded from the import-file build process.
 		// ### not required (the array can be emptied)
 		"ExcludePatterns" => array (
 			"#DISABLED#", // sample pattern
 			"#\.txt$#" // sample pattern
 		),
 		
-		// Reg-ex patterns applyied to files' full paths.
-		// If this array is empty, any file is included by default (unless it's explicitily excluded).
+		// Reg-ex patterns applyied to files (full path and name).
+		// If this array is empty, any file is included by default (unless it is explicitily excluded).
 		// If this array is populated, any file is excluded unless at least a pattern matches.
 		// ### not required (the array can be emptied)
 		"IncludePatterns" => array (
-			"#\.php#" // sample pattern
+			"#\.php$#" // sample pattern
 		),
 	),
 	
 	
 	// This script doesn't use namespaces.
 	"Namespace" => array (
-		// To be sure the script will create unique classnames, a prefix is applyed
+		// To be sure the script will create unique class names, a prefix is applyed.
 		// Default value as of ImportGenerator::IMPORTCLASS_DEFAULT_PREFIX
 		// ### required, must be at least one character
 		"ClassnamePrefix" => "_Ipt"
